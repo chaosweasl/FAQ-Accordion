@@ -1,50 +1,5 @@
-# React + TypeScript + Vite
+I've made several other projects before, but I never really had any direction with them, and mosty only made them just so I can practice my coding skills + learn React, so this is my first actual project with direction
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Even though it seems like a really simple project, I learned a lot, I realised that I need to work on my CSS skills, so that I'm able to intuitively pick the best things to use for my website in order for it to look the way I want it to. Also, this was the first time that I made a website look pretty when resizing it. I never made my previous projects look okay-ish on mobile before, so I'm really glad I learned this aswell.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Also, my biggest issue was importing fonts. It took me such a long time but I'm so glad I learned how to
