@@ -1,5 +1,12 @@
+import Top from "./components/Top";
+
 function App() {
-  return <h1 className="text-5xl">Hello World!</h1>;
+  return (
+    <>
+      <div className="container" bg-color-f9f0ff></div>
+      <Top />
+    </>
+  );
 }
 
 export default App;

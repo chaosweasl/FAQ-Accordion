@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+.bg-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 567px) {
+  .bg-desktop {
+    display: block;
+  }
+  .bg-mobile {
+    display: none;
+  }
+}
