@@ -10,7 +10,7 @@ export default function FAQBox() {
         <div
           className="absolute top-1/2 left-1/2 
           transform -translate-x-1/2 -translate-y-1/2 h-110 
-          w-80 md:w-140 bg-white rounded-xl p-6"
+          w-80 sm:w-140 bg-white rounded-xl p-6"
         >
           <h1 className="text-3xl flex items-center">
             <img className="w-6 h-6" src={starIcon} />

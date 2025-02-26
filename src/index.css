@@ -9,7 +9,7 @@
 }
 
 /*BG header*/
-@media screen and (min-width: 567px) {
+@media screen and (min-width: 640px) {
   .bg-desktop {
     display: block;
   }
@@ -19,7 +19,7 @@
 }
 
 /*FAQ box*/
-@media screen and (min-width: 763px) {
+@media screen and (min-width: 640px) {
   .box-desktop {
     display: block;
   }
