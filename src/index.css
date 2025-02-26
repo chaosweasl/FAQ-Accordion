@@ -12,3 +12,7 @@
     display: none;
   }
 }
+
+.custom-bg-color {
+  background-color: #f9f0ff;
+}

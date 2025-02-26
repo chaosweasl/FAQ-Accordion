@@ -1,10 +1,13 @@
-import Top from "./components/Top";
+import BackgroundComponent from "./components/BackgroundComponent";
+import FAQBox from "./components/FAQBox";
 
 function App() {
   return (
     <>
-      <div className="container" bg-color-f9f0ff></div>
-      <Top />
+      <div className="relative w-full min-h-screen">
+        <BackgroundComponent />
+        <FAQBox />
+      </div>
     </>
   );
 }
