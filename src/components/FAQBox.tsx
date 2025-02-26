@@ -6,16 +6,21 @@ import "../App.css";
 export default function FAQBox() {
   return (
     <>
-      <div id="FAQ-box">
+      <div className="flex justify-center items-center min-h-screen">
         <div
-          className="absolute top-1/2 left-1/2 
-          transform -translate-x-1/2 -translate-y-1/2 h-110 
+          id="FAQ-card"
+          className=" h-1000 
           w-80 sm:w-140 bg-white rounded-xl p-6"
         >
-          <h1 className="text-3xl flex items-center m-1">
+          <div id="FAQ-title" className="flex items-center m-1">
             <img className="w-6 h-6" src={starIcon} />
-            <b className="ml-5 font-[WorkSans]">FAQs</b>
-          </h1>
+            <b className="ml-5 text-3xl font-[WorkSans]">FAQs</b>
+          </div>
+          <ul>
+            <li className="faq-item">
+              <div className="faq-item-header">a</div>
+            </li>
+          </ul>
         </div>
       </div>
     </>

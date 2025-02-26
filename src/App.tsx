@@ -1,13 +1,9 @@
-import BackgroundComponent from "./components/BackgroundComponent";
-import FAQBox from "./components/FAQBox";
+import FAQ from "./components/FAQ";
 
 function App() {
   return (
     <>
-      <div className="relative w-full min-h-screen">
-        <BackgroundComponent />
-        <FAQBox />
-      </div>
+      <FAQ />
     </>
   );
 }
