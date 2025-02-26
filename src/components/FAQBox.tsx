@@ -12,7 +12,7 @@ export default function FAQBox() {
           transform -translate-x-1/2 -translate-y-1/2 h-110 
           w-80 sm:w-140 bg-white rounded-xl p-6"
         >
-          <h1 className="text-3xl flex items-center">
+          <h1 className="text-3xl flex items-center m-1">
             <img className="w-6 h-6" src={starIcon} />
             <b className="ml-5 font-[WorkSans]">FAQs</b>
           </h1>
