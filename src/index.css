@@ -1,14 +1,29 @@
 @import "tailwindcss";
 
+.box-desktop {
+  display: none;
+}
+
 .bg-desktop {
   display: none;
 }
 
+/*BG header*/
 @media screen and (min-width: 567px) {
   .bg-desktop {
     display: block;
   }
   .bg-mobile {
+    display: none;
+  }
+}
+
+/*FAQ box*/
+@media screen and (min-width: 763px) {
+  .box-desktop {
+    display: block;
+  }
+  .box-mobile {
     display: none;
   }
 }

@@ -4,9 +4,15 @@ import minusIcon from "../assets/images/icon-minus.svg";
 
 export default function FAQBox() {
   return (
-    <div
-      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 
-      -translate-y-1/2 h-20 w-30 bg-white"
-    ></div>
+    <>
+      <div
+        className="box-desktop absolute top-1/2 left-1/2 transform -translate-x-1/2 
+      -translate-y-1/2 h-110 w-140 bg-white rounded-3xl"
+      ></div>
+      <div
+        className="box-mobile absolute top-1/2 left-1/2 transform -translate-x-1/2 
+      -translate-y-1/2 h-110 w-80 bg-white rounded-3xl"
+      ></div>
+    </>
   );
 }
