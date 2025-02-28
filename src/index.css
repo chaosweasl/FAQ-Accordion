@@ -31,3 +31,11 @@
 .custom-bg-color {
   background-color: #f9f0ff;
 }
+
+.faq-item {
+  transition: color 0.3s ease;
+}
+
+.faq-item:hover {
+  color: #ad28eb;
+}
