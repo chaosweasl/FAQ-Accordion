@@ -36,4 +36,5 @@
 
 body {
   font-family: "WorkSans", sans-serif;
+  overflow: hidden;
 }

@@ -45,11 +45,11 @@ export default function FAQ() {
   const [icons, setIcons] = useState(Array(faqItems.length).fill(plusIcon));
 
   const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+    setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
 
     setIcons((prevIcons) =>
-      prevIcons.map((icon, i) =>
-        i === index ? (icon === plusIcon ? minusIcon : plusIcon) : icon
+      prevIcons.map((_, i) =>
+        i === index ? (openIndex === index ? plusIcon : minusIcon) : plusIcon
       )
     );
   };
@@ -58,16 +58,13 @@ export default function FAQ() {
     <>
       <div className="min-h-screen custom-bg-color">
         {/* UI + Header depending on screen size */}
-        <img className="bg-desktop w-full" src={desktopBg} />
-        <img className="bg-mobile w-full" src={mobileBg} />
+        <img className="bg-desktop w-full absolute" src={desktopBg} />
+        <img className="bg-mobile w-full absolute" src={mobileBg} />
 
         {/* FAQ Container */}
-        <div className="flex justify-center items-center">
+        <div className="min-h-screen flex justify-center items-center relative">
           {/* FAQ card design*/}
-          <div
-            id="FAQ-card"
-            className=" h-auto w-80 sm:w-140 bg-white rounded-xl p-6"
-          >
+          <div id="FAQ-card" className="w-80 sm:w-120 bg-white rounded-xl p-6">
             {/* FAQ title */}
             <div id="FAQ-title" className="flex items-center m-1">
               <img className="w-6 h-6" src={starIcon} />
@@ -89,6 +86,10 @@ export default function FAQ() {
                     <span className="font-bold">{item.question}</span>
                     <img src={icons[index]} className="w-8 h-8" />
                   </button>
+
+                  {openIndex === index && (
+                    <p className="mt-3 text-gray-600">{item.answer}</p>
+                  )}
                 </li>
               ))}
             </ul>
