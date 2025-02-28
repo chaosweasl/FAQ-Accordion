@@ -84,12 +84,23 @@ export default function FAQ() {
                     cursor-pointer text-left"
                   >
                     <span className="font-bold">{item.question}</span>
-                    <img src={icons[index]} className="w-8 h-8" />
+                    <img
+                      src={icons[index]}
+                      className={`w-8 h-8 transition-transform duration-300 ${
+                        openIndex === index ? "rotate-180" : "rotate-0"
+                      }`}
+                    />
                   </button>
 
-                  {openIndex === index && (
+                  <div
+                    className={`transition-all duration-500 overflow-hidden ${
+                      openIndex === index
+                        ? "max-h-40 opacity-100"
+                        : "max-h-0 opacity-0"
+                    }`}
+                  >
                     <p className="mt-3 text-gray-600">{item.answer}</p>
-                  )}
+                  </div>
                 </li>
               ))}
             </ul>
